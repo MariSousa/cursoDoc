@@ -1,0 +1,517 @@
+[
+  {
+    "linguagem": "HTML",
+    "imagem": "img/capa_html.jpg",
+    "id": "Iniciando-com-HTML",
+    "referencia": "Documentação MDN HTML",
+    "curso": "HTML Documentação",
+    "capitulo": "1",
+    "titulo": "Iniciando com HTML",
+    "paragrafo": "Neste capítulo nós abordamos os princípios básicos do HTML, para você começar. Definimos os elementos, atributos e todos os outros termos importantes que você possa ter ouvido e onde eles se encaixam na linguagem. Também mostramos como um elemento HTML é estruturado, como uma página HTML típica é estruturada e explicamos outras importantes características básicas da linguagem. Ao longo do caminho, nós brincaremos com um pouco de HTML, para despertar seu interesse!",
+    "body": [
+      {
+        "subtitulo": "O que é HTML?",
+        "paragrafo": "HTML (HyperText Markup Language) não é uma linguagem de programação, é uma linguagem de marcação utilizada para dizer ao seu navegador como estruturar a página web que você visita. A página pode ser tanto complicada como simples quanto o desenvolvedor web desejar que seja. HTML consiste em uma série de elementos que você usa para anexar, envolver ou marcar diferentes partes do conteúdo para que apareça ou aja de uma certa maneira. O fechamento das tags pode transformar uma parte do conteúdo dentro do elemento em um link para direcionar à uma outra página web, colocar as palavras em itálico, e assim por diante. "
+      },
+      {
+        "subtitulo": "Anatomia de um elemento HTML",
+        "paragrafo": "As partes principais do elemento são: Tag de abertura: Consiste no nome do elemento ( neste caso: p ), envolvido entre parênteses angulares de abertura e fechamento. Isso indica onde o elemento começa, ou inicia a produzir efeito — neste caso, onde o parágrafo se inicia. Tag de fechamento: É o mesmo que a tag de abertura, exceto que este inclui uma barra diagonal antes do nome do elemento. Indica onde o elemento termina — neste caso, onde fica o fim do parágrafo. Falhar em incluir o fechamento de uma tag é um erro comum para iniciantes e pode levar a resultados estranhos. O conteúdo: Este é o conteúdo do elemento, que neste caso é somente texto. O elemento: A tag de abertura, mais a tag de fechamento, mais o conteúdo, é igual ao elemento."
+      },
+      {
+        "subtitulo": "Aprendizado ativo: criando seu primeiro elemento HTML",
+        "paragrafo": "Edite a linha abaixo na área Entrada colocando-a entre as tags <em> e </em> (adicione o <em> antes para abrir o elemento, e </em> depois, para fechar o elemento). Isto dará à linha uma ênfase em itálico! Você poderá ver as mudanças efetuadas no momento na área Saída. Caso você cometa um erro, você pode usar o botão Resetar para desfazer a ação incorreta. Se você realmente não souber o que fazer, pressione o botão Mostrar solução para visualizar a resposta."
+      },
+      {
+        "subtitulo": "Aninhando elementos",
+        "paragrafo": "Elementos podem ser inseridos dentro de outros elementos — isto é chamado de aninhamento. Se nós quisermos dizer que nosso gato é muito mal-humorado, nós poderemos envolver a palavra 'muito' com o elemento <strong>, que significa enfatizar fortemente a palavra. No entanto, você precisa garantir que seus elementos estejam adequadamente aninhados: no exemplo acima nós abrimos o elemento p primeiro, e então o elemento strong, portanto temos que fechar o elemento strong primeiro, depois o p. Os elementos devem abrir e fechar corretamente para que eles fiquem claramente dentro ou fora do outro. Caso eles se sobreponham, como no exemplo acima, então o seu navegador tentará adivinhar o que você quis dizer, e talvez você obtenha resultados inesperados. Então não faça isso!"
+      },
+      {
+        "subtitulo": "Elementos em bloco versus elementos inline",
+        "paragrafo": "Há duas categorias importantes no HTML, que você precisa conhecer. Eles são elementos em bloco e elementos inline. Elementos em bloco formam um bloco visível na página — eles aparecerão em uma nova linha logo após qualquer elemento que venha antes dele, e qualquer conteúdo depois de um elemento em bloco também aparecerá em uma nova linha. Elementos em bloco geralmente são elementos estruturais na página que representam, por exemplo: parágrafos, listas, menus de navegação, rodapés etc. Um elemento em bloco não seria aninhado dentro de um elemento inline, mas pode ser aninhado dentro de outro elemento em bloco. Elementos inline (na linha) são aqueles que estão contidos dentro de elementos em bloco envolvem apenas pequenas partes do conteúdo do documento e não parágrafos inteiros ou agrupamentos de conteúdo. Um elemento inline não fará com que uma nova linha apareça no documento: os elementos inline geralmente aparecem dentro de um parágrafo de texto, por exemplo: um elemento <a>(hyperlink) ou elementos de ênfase como <em> ou <strong>. O elemento <em> é inline, então como você pode ver abaixo, os três primeiros elementos ficam na mesma linha uns dos outros sem espaço entre eles. O <p>, por outro lado, é um elemento em bloco, então cada elemento aparece em uma nova linha, com espaço acima e abaixo de cada um (o espaçamento é devido à estilização CSS padrão que o browser aplica aos parágrafos)."
+      },
+      {
+        "subtitulo": "Elementos vazios",
+        "paragrafo": "Nem todos os elementos seguem o padrão acima de: tag de abertura, conteúdo, tag de fechamento. Alguns elementos consistem apenas em uma única tag, que é geralmente usada para inserir/incorporar algo no documento no lugar em que ele é incluído. "
+      },
+      {
+        "subtitulo": "Atributos",
+        "paragrafo": "Atributos contém informação extra sobre o elemento, mas que você não deseja que apareça no conteúdo. Neste caso, o atributo class permite que você dê ao elemento um nome de identificação, que pode ser usada mais tarde para direcionar informação de estilo ao elemento e outras coisas. Um atributo deve conter: Um espaço entre ele e o nome do elemento (ou o atributo anterior, caso o elemento já contenha um ou mais atributos.) O nome do atributo, seguido por um sinal de igual. Um valor de atributo, com aspas de abertura e fechamento em volta dele. "
+      },
+      {
+        "subtitulo": "Aprendizado ativo: Adicionando atributos a um elemento",
+        "paragrafo": "Outro exemplo de um elemento é <a> — isso significa 'âncora' e fará com que a parte do texto que ele envolve vire um link. Isso pode ter vários atributos, mas o mais comuns são os seguintes: O valor desse atributo especifica o endereço da web para o qual você deseja que o link aponte; onde o navegador irá quando o link for clicado. title: O atributo title especifica uma informação extra sobre o link, assim como o assunto da página que está sendo linkada. Por exemplo title='Homepage da Mozilla'. Isto será exibido como uma tooltip (dica de contexto) quando passarmos o mouse sobre o link. Edite a linha abaixo na área de Entrada para transformá-la em um link para o seu site favorito. Primeiro, adicione o elemento <a>. Segundo, adicione o atributo href e o atributo title. Por último, especifique o atributo target para abrir o link em uma nova aba. Você poderá ver as atualizações das alterações ao vivo na área Saída. Você deve ver um link que, quando passa o mouse sobre ele, exibe o valor do atributo title e, quando clicado, navega para o endereço da web no atributo href. Lembre-se de que você precisa incluir um espaço entre o nome do elemento e cada atributo. Caso você cometa um erro, você poderá desfazê-lo usando o botão _Reset_ar. Caso você realmente não saiba como fazer, pressione o botão Mostrar solução para ver a resposta. "
+      }
+    ]
+  },
+  {
+    "linguagem": "HTML",
+    "id": "O-que-está-no-cabeçalho-Metadados-em-HTML",
+    "referencia": "Documentação MDN HTML",
+    "curso": "HTML Documentação",
+    "capitulo": "2",
+    "titulo": "O que está no cabeçalho? Metadados em HTML",
+    "paragrafo": "O head (en-US) de um documento HTML é a parte que não é exibida no navegador da Web quando a página é carregada. Ele contém informações como title , links para <css> (se você deseja modelar seu conteúdo HTML com CSS), links para favicons personalizados e outros metadados (dados sobre o HTML, como quem o escreveu, e palavras-chave importantes que descrevem o documento.) Neste artigo, abordaremos todas as coisas acima e mais. Dando-lhe uma boa base para lidar com marcação.",
+    "body": [
+      {
+        "subtitulo": "O que há no cabeçalho HTML?",
+        "paragrafo": "O cabeçalho HTML é o conteúdo do elemento <head> — ao contrário do conteúdo do elemento <body> (que são exibidos na página quando carregados no navegador), o conteúdo do cabeçalho não é exibido na página, em vez disso, o trabalho do cabeçalho é conter metadados sobre o documento. Em páginas maiores, o cabeçalho pode ter mais conteúdo. Tente acessar um dos seus sites favoritos e use as ferramentas de desenvolvimento para verificar o conteúdo do cabeçalho. Nosso objetivo aqui não é mostrar a você como usar tudo o que é possível pôr no cabeçalho, mas te ensinar a usar as coisas mais obvias que você vai querer incluir no cabeçalho, e lhe dar alguma familiaridade. Vamos começar."
+      },
+      {
+        "subtitulo": "Adicionando um título",
+        "paragrafo": "Nós já vimos o elemento <title> em ação — ele pode ser usado para adicionar um título ao documento, mas pode ser confundido com o elemento <h1> (en-US), que é usado para adicionar um título de nível superior ao conteúdo do body — as vezes também é associado como o título da página. Mas são coisas diferentes! O elemento <h1> (en-US) aparece na página quando é carregado no navegador — geralmente isso deve ser usado uma vez por página, para marcar o título do conteúdo da sua página, (o título da história, ou da notícia, ou o que quer que seja apropriado para o uso). O elemento <title> é um metadado que representa o título de todo o document HTML (não o conteúdo do documento)."
+      },
+      {
+        "subtitulo": "Metadados: o elemento <meta>",
+        "paragrafo": "Metadados é dado descreve dados, e HTML possui uma maneira 'oficial' de adicionar metadados a um documento — o elemento <meta>. Claro, as outras coisas em que estamos falando neste artigo também podem ser pensadas como metadados. Existem muitos tipos diferentes de elementos <meta> que podem ser incluídos no <head> da sua página, mas não tentaremos explicar todos eles nesta fase, pois seria muito confuso. Em vez disso, explicaremos algumas coisas que você pode ver comumente, apenas para lhe dar uma idéia."
+      },
+      {
+        "subtitulo": "Adicionando ícones personalizados ao seu site",
+        "paragrafo": "Para enriquecer ainda mais o design do seu site, você pode adicionar referências a ícones personalizados em seus metadados, e estes serão exibidos em determinados contextos. O mais usado é o favicon (abreviação de 'favorites icon', referindo-se ao seu uso nas listas 'favoritos' nos navegadores). O humilde favicon existe há muitos anos. É o primeiro ícone desse tipo: um ícone 16 pixels quadrados usado em vários lugares. Você pode ver (dependendo do navegador) ícones favoritos exibidos na guia do navegador que contém cada página aberta e ao lado de páginas marcadas no painel de favoritos."
+      },
+      {
+        "subtitulo": "Aplicando CSS e JavaScript ao HTML",
+        "paragrafo": "Todos os sites que você usar nos dias atuais empregarão o CSS para torná-los legais e o JavaScript para ativar a funcionalidade interativa, como players de vídeo, mapas, jogos e muito mais. Estes são comumente aplicados a uma página web usando o elemento <link> e o elemento <script> , respectivamente."
+      },
+      {
+        "subtitulo": "Definir o idioma principal do documento",
+        "paragrafo": "Finalmente, vale a pena mencionar que você pode (e realmente deveria) definir o idioma da sua página. Isso pode ser feito adicionando o atributo lang à tag HTML de abertura (como visto no meta-example.html e mostrado abaixo). Isso é útil de várias maneiras. O seu documento HTML será indexado de forma mais eficaz pelos motores de busca se o seu idioma for definido (permitindo que ele apareça corretamente em resultados específicos do idioma, por exemplo), e é útil para pessoas com deficiências visuais usando leitores de tela (por exemplo, a palavra 'seis' existe em Francês e Inglês, mas é pronunciado de forma diferente.) Você também pode definir seções secundárias do seu documento para serem reconhecidas em diferentes idiomas. "
+      }
+    ]
+  },
+  {
+    "linguagem": "HTML",
+    "id": "Fundamentos-do-texto-em-HTML",
+    "referencia": "Documentação MDN HTML",
+    "curso": "HTML Documentação",
+    "capitulo": "3",
+    "titulo": "Fundamentos do texto em HTML",
+    "paragrafo": "Um dos principais objetivos do HTML é dar estrutura de texto e significado, também conhecido como semântica), para que um navegador possa exibi-lo corretamente. Este artigo explica a forma como HTML pode ser usado para estruturar uma página de texto, adicionar títulos e parágrafos, enfatizar palavras, criar listas e muito mais.",
+    "body": [
+      {
+        "subtitulo": "O básico: Cabeçalhos e Parágrafos",
+        "paragrafo": "O texto mais estruturado é composto por títulos e parágrafos,esteja você lendo uma história, um jornal, um livro da faculdade, uma revista, etc. Existem seis elementos de título — <h1> (en-US), <h2> (en-US), <h3> (en-US), <h4> (en-US), <h5> (en-US) e <h6> (en-US) . Cada elemento representa um nível diferente de conteúdo no documento; <h1> representa o título principal, <h2> representa subtítulos, <h3> representa sub-subtítulos, e assim por diante."
+      },
+      {
+        "subtitulo": "Listas",
+        "paragrafo": "Agora voltemos nossa atenção para as listas. As listas estão em toda parte na vida — de sua lista de compras à lista de instruções que você seguiu inconscientemente para chegar à sua casa todos os dias, para as listas das instruções que está seguindo nesses tutoriais! As listas também estão na Web e temos três tipos diferentes para prestarmos atenção."
+      },
+      {
+        "subtitulo": "Ênfase e importância",
+        "paragrafo": "Na linguagem humana, muitas vezes enfatizamos certas palavras para alterar o significado de uma frase, e muitas vezes queremos marcar certas palavras como importantes ou diferentes de alguma forma. O HTML fornece vários elementos semânticos que nos permitem marcar o conteúdo textual com esses efeitos, e, nesta seção, vamos ver alguns dos mais comuns."
+      }
+    ]
+  },
+  {
+    "linguagem": "HTML",
+    "id": "Criando-hyperlinks",
+    "referencia": "Documentação MDN HTML",
+    "curso": "HTML Documentação",
+    "capitulo": "4",
+    "titulo": "Criando hyperlinks",
+    "paragrafo": "Os hiperlinks são realmente importantes — são o que torna a Web uma web. Este artigo mostra a sintaxe necessária para criar um link e discute as suas melhores práticas.",
+    "body": [
+      {
+        "subtitulo": "O que é um hiperlink?",
+        "paragrafo": "Os hiperlinks são uma das inovações mais interessantes que a Web oferece. Bem, eles são uma característica da Web desde o início, mas são o que torna a Web como ela é — eles nos permitem vincular nossos documentos a qualquer outro documento (ou outro recurso) que queremos. Também podemos vincular para partes específicas de documentos e podemos disponibilizar aplicativos em um endereço web simples (em contraste com aplicativos nativos, que devem ser instalados e tantas outras coisas). Qualquer conteúdo da web pode ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço."
+      },
+      {
+        "subtitulo": "Anatomia de um link",
+        "paragrafo": "Um link básico é criado envolvendo o texto (ou outro conteúdo, veja Block level links) que você quer transformar em um link dentro de um elemento <a>, e dando-lhe um atributo href, (também conhecido como Hypertext Reference, ou target) que conterá o endereço da Web para o qual você deseja que o link aponte."
+      },
+      {
+        "subtitulo": "Um guia rápido sobre URLs e caminhos",
+        "paragrafo": "Para entender completamente os destinos de links, você precisa entender URLs e caminhos de arquivos. Esta seção fornece as informações que você precisa para conseguir isso. Um URL ou Uniform Resource Locator é simplesmente uma sequência de texto que define onde algo está localizado na Web. Por exemplo, a página inicial em inglês da Mozilla está localizada em https://www.mozilla.org/en-US/. Os URLs usam caminhos para encontrar arquivos. Os caminhos especificam onde, no explorador de arquivos, o recurso que você está interessado está localizado. Vejamos um exemplo simples de uma estrutura de diretório."
+      },
+      {
+        "subtitulo": "Práticas recomendadas",
+        "paragrafo": "É muito fácil jogar links na sua página, porém somente isto não é suficiente. Precisamos tornar nossos links acessíveis a todos os leitores, independentemente do contexto atual e de quais ferramentas eles prefiram. Por exemplo: Os usuários de leitores de telas gostam pular de link a outro link na página e ler links fora do contexto. Os motores de busca usam o texto do link para indexar arquivos de destino, por isso é uma boa idéia incluir palavras-chave no texto do link para descrever efetivamente o que está sendo vinculado. Os usuários normalmente deslizam sobre a página em vez de ler cada palavra, e são atraídos para recursos de página que se destacam, como links. Eles acharão os textos descritivos de links úteis."
+      }
+    ]
+  },
+  {
+    "linguagem": "HTML",
+    "id": "Formatação-avançada-de-texto",
+    "referencia": "Documentação MDN HTML",
+    "curso": "HTML Documentação",
+    "capitulo": "5",
+    "titulo": "Formatação avançada de texto",
+    "paragrafo": "Existem muitos outros elementos em HTML para formatação de texto, que não tratamos no artigo de Fundamentos do texto em HTML. Os elementos descritos neste artigo são menos conhecidos, mas ainda são úteis para conhecer (e isso ainda não é uma lista completa de todos os elementos). Aqui, você aprenderá a marcar citações, listas de descrição, código de computador e outros textos relacionados, subscrito e sobrescrito, informações de contato e muito mais.",
+    "body": [
+      {
+        "subtitulo": "Listas de descrição",
+        "paragrafo": "Nos Fundamentos do texto em HTML, falamos sobre como marcar as listas básicas em HTML, mas não mencionamos o terceiro tipo de lista que ocasionalmente irá encontrar - listas de descrição. O objetivo dessas listas é marcar um conjunto de itens e suas descrições associadas, como termos e definições, ou perguntas e respostas."
+      },
+      {
+        "subtitulo": "Citações",
+        "paragrafo": "HTML também possui recursos disponíveis para marcação de citações. Qual elemento você pode usar? Depende se está marcando um bloco ou uma citação em linha. Se uma seção de conteúdo em nível de bloco (seja um parágrafo, vários parágrafos, uma lista, etc.) for citada em algum outro lugar, você deverá envolvê-la em um elemento <blockquote> para indicar isso e incluir um URL apontando para a fonte da citação dentro de um atributo cite. Por exemplo, a marcação a seguir é obtida da página do elemento <blockquote> do MDN."
+      },
+      {
+        "subtitulo": "Abreviações",
+        "paragrafo": "Outro elemento bastante comum que você encontrará ao olhar na Web é o <abbr> — usado para contornar uma abreviação ou sigla e fornecer uma expansão completa do termo (incluído em um atributo title.)"
+      }
+    ]
+  },
+  {
+    "linguagem": "React",
+    "id": "Descrevendo-a-Interface-do-Usuário",
+    "referencia": "Documentação React",
+    "curso": "React Documentação",
+    "capitulo": "1",
+    "titulo": "Descrevendo a Interface do Usuário",
+    "paragrafo": "Quando construímos uma interface de usuário com React, precisamos pensar em como descrever as diferentes partes da interface em termos de componentes. Uma abordagem comum é pensar em cada parte da interface como um componente separado, com suas próprias propriedades e estado.",
+    "body": [
+      {
+        "subtitulo": "Componentes e Composição",
+        "paragrafo": "Em React, um componente é uma peça reutilizável de código que encapsula a lógica e o markup relacionados a um determinado elemento de interface do usuário. Um componente pode ser tão simples quanto um botão ou tão complexo quanto uma tabela de dados. Composição é o processo de combinar esses componentes menores para criar componentes maiores e mais complexos."
+      },
+      {
+        "subtitulo": "Árvore de Componentes",
+        "paragrafo": "Ao descrever a interface do usuário em termos de componentes, podemos criar uma árvore de componentes que representa a hierarquia dos diferentes elementos da interface. Por exemplo, uma aplicação de lista de tarefas pode ter um componente 'Lista de Tarefas' que contém componentes 'Item de Tarefa' que, por sua vez, contêm componentes 'Botão de Concluir' e 'Botão de Excluir'."
+      },
+      {
+        "subtitulo": "Propriedades e Estado",
+        "paragrafo": "Os componentes podem ter propriedades, que são passadas de um componente pai para um componente filho, e estado, que é mantido dentro do próprio componente. As propriedades são usadas para fornecer informações a um componente filho, enquanto o estado é usado para gerenciar as informações dentro do componente. Ao usar propriedades e estado de forma eficaz, podemos criar interfaces de usuário que são dinâmicas e responsivas."
+      },
+      {
+        "subtitulo": "Fluxo de Dados Unidirecional",
+        "paragrafo": "O fluxo de dados em uma aplicação React é unidirecional, o que significa que as informações fluem de cima para baixo na árvore de componentes. Isso significa que os componentes filhos não podem afetar o estado dos componentes pais diretamente. Em vez disso, os componentes filhos podem chamar funções passadas como propriedades para atualizar o estado de seus componentes pais."
+      },
+      {
+        "subtitulo": "Conclusão",
+        "paragrafo": "Ao descrever a interface do usuário em termos de componentes, podemos criar uma hierarquia clara de elementos da interface e usar propriedades e estado para criar interfaces de usuário dinâmicas e responsivas. O fluxo de dados unidirecional garante que as informações fluam de forma previsível e ajuda a manter a aplicação organizada e fácil de manter."
+      }
+    ]
+  },
+  {
+    "linguagem": "React",
+    "id": "Seu-primeiro-componente",
+    "referencia": "Documentação React",
+    "curso": "React Documentação",
+    "capitulo": "2",
+    "titulo": "Seu primeiro componente",
+    "paragrafo": "Componentes são um dos conceitos centrais do React. Eles são a base sobre a qual você constrói interfaces de usuário (UI), o que os torna o lugar perfeito para começar sua jornada React!",
+    "body": [
+      {
+        "subtitulo": "Componentes: blocos de construção da interface do usuário",
+        "paragrafo": "Na Web, o HTML nos permite criar documentos estruturados avançados com seu conjunto integrado de tags como <h1>e <li>. Esta marcação representa este artigo <article>, seu cabeçalho <h1>e um sumário (abreviado) como uma lista ordenada <ol>. Marcações como essa, combinadas com CSS para estilo e JavaScript para interatividade, estão por trás de cada barra lateral, avatar, modal, menu suspenso, cada parte da interface do usuário que você vê na Web. O React permite que você combine sua marcação, CSS e JavaScript em “componentes” personalizados, elementos de interface do usuário reutilizáveis ​​para seu aplicativo. O código do índice que você viu acima pode ser transformado em um <TableOfContents />componente que você pode renderizar em todas as páginas. Sob o capô, ele ainda usa as mesmas tags HTML como <article>, <h1>, etc. Assim como nas tags HTML, você pode compor, ordenar e aninhar componentes para criar páginas inteiras. Por exemplo, a página de documentação que você está lendo é feita de componentes React. À medida que seu projeto cresce, você notará que muitos de seus designs podem ser compostos reutilizando componentes que você já escreveu, acelerando seu desenvolvimento. Nosso sumário acima pode ser adicionado a qualquer tela com <TableOfContents />! Você pode até iniciar seu projeto com os milhares de componentes compartilhados pela comunidade de código aberto React, como Chakra UI e Material UI."
+      },
+      {
+        "subtitulo": "Definindo um componente",
+        "paragrafo": "Tradicionalmente, ao criar páginas da Web, os desenvolvedores da Web marcavam seu conteúdo e, em seguida, adicionavam interação adicionando um pouco de JavaScript. Isso funcionou muito bem quando a interação era algo bom de se ter na web. Agora é esperado para muitos sites e todos os aplicativos. O React coloca a interatividade em primeiro lugar enquanto ainda usa a mesma tecnologia: um componente React é uma função JavaScript que você pode polvilhar com marcação."
+      },
+      {
+        "subtitulo": "Passo 1: Exportar o componente",
+        "paragrafo": "O export defaultprefixo é uma sintaxe JavaScript padrão (não específica para React). Permite marcar a função principal em um arquivo para depois importá-la de outros arquivos. (Mais sobre importação em Importando e Exportando Componentes !)"
+      },
+      {
+        "subtitulo": "Passo 2: Defina a função",
+        "paragrafo": "Com function Profile() { }você define uma função JavaScript com o nome Profile."
+      },
+      {
+        "subtitulo": "Etapa 3: adicionar marcação",
+        "paragrafo": "O componente retorna uma <img />tag com atributos srce alt. <img />é escrito como HTML, mas na verdade é JavaScript sob o capô! Essa sintaxe é chamada de JSX e permite incorporar marcações dentro do JavaScript. "
+      },
+      {
+        "subtitulo": "Usando um componente",
+        "paragrafo": "Agora que definiu seu Profilecomponente, você pode aninhá-lo dentro de outros componentes. "
+      }
+    ]
+  },
+  {
+    "linguagem": "React",
+    "id": "Importando-e-Exportando-Componentes",
+    "referencia": "Documentação React",
+    "curso": "React Documentação",
+    "capitulo": "3",
+    "titulo": "Importando e Exportando Componentes",
+    "paragrafo": "A mágica dos componentes reside em sua capacidade de reutilização: você pode criar componentes compostos de outros componentes. Mas à medida que você aninha mais e mais componentes, geralmente faz sentido começar a dividi-los em arquivos diferentes. Isso permite que você mantenha seus arquivos fáceis de digitalizar e reutilize componentes em mais lugares.",
+    "body": [
+      {
+        "subtitulo": "O arquivo do componente raiz",
+        "paragrafo": "Em Your First Component , você criou um Profilecomponente e um Gallerycomponente que o renderiza. Atualmente, eles residem em um arquivo de componente raiz, nomeado App.jsneste exemplo. Em Create React App , seu aplicativo reside em src/App.js. Dependendo da sua configuração, seu componente raiz pode estar em outro arquivo. Se você usar uma estrutura com roteamento baseado em arquivo, como Next.js, seu componente raiz será diferente para cada página."
+      },
+      {
+        "subtitulo": "Exportando e importando um componente",
+        "paragrafo": "E se você quiser mudar a tela inicial no futuro e colocar uma lista de livros de ciências lá? Ou colocar todos os perfis em outro lugar? Faz sentido mover Gallerye Profilesair do arquivo de componente raiz. Isso os tornará mais modulares e reutilizáveis ​​em outros arquivos. Você pode mover um componente em três etapas: Crie um novo arquivo JS para colocar os componentes. Exporte seu componente de função desse arquivo (usando exportações padrão ou nomeadas ). Importe- o no arquivo onde você usará o componente (usando a técnica correspondente para importar exportações padrão ou nomeadas )."
+      },
+      {
+        "subtitulo": "Exportar e importar vários componentes do mesmo arquivo",
+        "paragrafo": "E se você quiser mostrar apenas um Profileem vez de uma galeria? ProfileVocê também pode exportar o componente. Mas Gallery.jsjá tem uma exportação padrão e você não pode ter duas exportações padrão. Você pode criar um novo arquivo com uma exportação padrão ou pode adicionar uma exportação nomeadaProfile para . Um arquivo pode ter apenas uma exportação padrão, mas pode ter várias exportações nomeadas!"
+      }
+    ]
+  },
+  {
+    "linguagem": "React",
+    "id": "Escrevendo-marcação-com-JSX",
+    "referencia": "Documentação React",
+    "curso": "React Documentação",
+    "capitulo": "4",
+    "titulo": "Escrevendo marcação com JSX",
+    "paragrafo": "JSX é uma extensão de sintaxe para JavaScript que permite escrever marcações semelhantes a HTML dentro de um arquivo JavaScript. Embora existam outras maneiras de escrever componentes, a maioria dos desenvolvedores React prefere a concisão do JSX e a maioria das bases de código o utiliza.",
+    "body": [
+      {
+        "subtitulo": "JSX: Colocando marcação em JavaScript",
+        "paragrafo": "A Web foi construída em HTML, CSS e JavaScript. Por muitos anos, os desenvolvedores da Web mantiveram o conteúdo em HTML, o design em CSS e a lógica em JavaScript — muitas vezes em arquivos separados! Mas à medida que a Web se tornava mais interativa, a lógica determinava cada vez mais o conteúdo. O JavaScript ficou a cargo do HTML! É por isso que no React, a lógica de renderização e a marcação vivem juntas no mesmo lugar – os componentes. Manter a lógica de renderização e a marcação de um botão juntas garante que eles permaneçam sincronizados entre si em todas as edições. Por outro lado, os detalhes não relacionados, como a marcação do botão e a marcação da barra lateral, são isolados uns dos outros, tornando mais seguro alterar qualquer um deles por conta própria. Cada componente do React é uma função JavaScript que pode conter alguma marcação que o React renderiza no navegador. Os componentes do React usam uma extensão de sintaxe chamada JSX para representar essa marcação. O JSX se parece muito com o HTML, mas é um pouco mais rígido e pode exibir informações dinâmicas. A melhor maneira de entender isso é converter alguma marcação HTML em marcação JSX."
+      },
+      {
+        "subtitulo": "Convertendo HTML para JSX",
+        "paragrafo": "Suponha que você tenha algum HTML (perfeitamente válido). E você quer colocá-lo em seu componente. Se você copiar e colar como está, não funcionará. Isso ocorre porque o JSX é mais rígido e possui algumas regras a mais que o HTML! Se você ler as mensagens de erro acima, elas o guiarão para corrigir a marcação ou você poderá seguir o guia abaixo."
+      },
+      {
+        "subtitulo": "As regras do JSX",
+        "paragrafo": "1. Retorne um único elemento raiz. Para retornar vários elementos de um componente, envolva-os com uma única marca pai. Por exemplo, você pode usar um <div>. Se você não deseja adicionar um extra <div>à sua marcação, pode escrever <>e, </>em vez disso. Essa tag vazia é chamada de Fragmento. Os fragmentos permitem agrupar coisas sem deixar rastros na árvore HTML do navegador. 2. Feche todas as tags. O JSX requer que as tags sejam explicitamente fechadas: tags de fechamento automático como <img>devem se tornar <img />, e tags de empacotamento como <li>orangesdevem ser escritas como <li>oranges</li>. 3. CamelCase todas as coisas! JSX se transforma em JavaScript e atributos escritos em JSX se tornam chaves de objetos JavaScript. Em seus próprios componentes, muitas vezes você desejará ler esses atributos em variáveis. Mas JavaScript tem limitações em nomes de variáveis. Por exemplo, seus nomes não podem conter hífens ou palavras reservadas como class. É por isso que, no React, muitos atributos HTML e SVG são escritos em camelCase. Por exemplo, em vez de stroke-widthvocê usar strokeWidth. Você pode encontrar todos esses atributos na lista de props do componente DOM. Se você errar, não se preocupe — o React imprimirá uma mensagem com uma possível correção no console do navegador."
+      },
+      {
+        "subtitulo": "Dica profissional: use um conversor JSX",
+        "paragrafo": "Converter todos esses atributos em marcação existente pode ser tedioso! Recomendamos o uso de um conversor para traduzir seu HTML e SVG existentes para JSX. Os conversores são muito úteis na prática, mas ainda vale a pena entender o que está acontecendo para que você possa escrever JSX confortavelmente por conta própria. "
+      }
+    ]
+  },
+  {
+    "linguagem": "React",
+    "id": "JavaScript-em-JSX-com-chaves",
+    "referencia": "Documentação React",
+    "curso": "React Documentação",
+    "capitulo": "5",
+    "titulo": "JavaScript em JSX com chaves",
+    "paragrafo": "O JSX permite que você escreva marcações semelhantes a HTML dentro de um arquivo JavaScript, mantendo a lógica de renderização e o conteúdo no mesmo lugar. Às vezes, você desejará adicionar um pouco de lógica JavaScript ou fazer referência a uma propriedade dinâmica dentro dessa marcação. Nesta situação, você pode usar chaves em seu JSX para abrir uma janela para JavaScript.",
+    "body": [
+      {
+        "subtitulo": "Passando strings com aspas",
+        "paragrafo": "Quando você deseja passar um atributo de string para o JSX, coloque-o entre aspas simples ou duplas. Mas e se você quiser especificar dinamicamente o texto srcou alt? Você pode usar um valor de JavaScript substituindo 'e'por {e}. Observe a diferença entre className='avatar', que especifica um 'avatar'nome de classe CSS que torna a imagem arredondada e src={avatar}que lê o valor da variável JavaScript chamada avatar. Isso porque as chaves permitem que você trabalhe com JavaScript ali mesmo em sua marcação!"
+      },
+      {
+        "subtitulo": "Usando chaves: uma janela para o mundo JavaScript",
+        "paragrafo": "JSX é uma maneira especial de escrever JavaScript. Isso significa que é possível usar JavaScript dentro dele — com chaves { }. O exemplo abaixo primeiro declara um nome para o cientista, namee então o incorpora com chaves dentro de <h1>. Tente alterar o namevalor de 'Gregorio Y. Zara'para 'Hedy Lamarr'. Veja como o título da lista muda? Qualquer expressão JavaScript funcionará entre chaves, incluindo chamadas de função como formatDate()."
+      },
+      {
+        "subtitulo": "Onde usar chaves",
+        "paragrafo": "Você só pode usar chaves de duas maneiras dentro do JSX: Como texto diretamente dentro de uma tag JSX: <h1>{name}'s To Do List</h1>funciona, mas <{tag}>Gregorio Y. Zara's To Do List</{tag}> não funcionará. Como atributos imediatamente após o =sinal: src={avatar}lerá a avatarvariável, mas src='{avatar}'passará a string '{avatar}'."
+      },
+      {
+        "subtitulo": "Usando “double curlies”: CSS e outros objetos em JSX",
+        "paragrafo": "Além de strings, números e outras expressões JavaScript, você pode até mesmo passar objetos em JSX. Os objetos também são indicados com chaves, como { name: 'Hedy Lamarr', inventions: 5 }. Portanto, para passar um objeto JS em JSX, você deve envolver o objeto em outro par de chaves: person={{ name: 'Hedy Lamarr', inventions: 5 }}. Você pode ver isso com estilos CSS embutidos no JSX. O React não exige que você use estilos embutidos (as classes CSS funcionam muito bem na maioria dos casos)."
+      }
+    ]
+  },
+  {
+    "linguagem": "JavaScript",
+    "id": "O-que-é-JavaScript",
+    "referencia": "Documentação MDN Javascript",
+    "curso": "Javascript Documentação",
+    "capitulo": "1",
+    "titulo": "O que é JavaScript?",
+    "paragrafo": "Sejam bem-vindos ao curso de JavaScript para iniciantes do MDN! Neste primeiro artigo vamos fazer uma análise profunda da linguagem, respondendo questões como 'O que é JavaScript?', e 'O que ele faz?', para você se sentir confortável com a proposta da linguagem.",
+    "body": [
+      {
+        "subtitulo": "Definição de alto nível",
+        "paragrafo": "JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. — você pode apostar que o JavaScript provavelmente está envolvido. É a terceira camada do bolo das tecnologias padrões da web, duas das quais (HTML e CSS) nós falamos com muito mais detalhes em outras partes da Área de Aprendizado."
+      },
+      {
+        "subtitulo": "Então o que ele pode realmente fazer?",
+        "paragrafo": "O que é ainda mais empolgante é a funcionalidade construída no topo do núcleo da linguagem JavaScript. As APIs (Application Programming Interfaces - Interface de Programação de Aplicativos) proveem a você superpoderes extras para usar no seu código JavaScript. APIs são conjuntos prontos de blocos de construção de código que permitem que um desenvolvedor implemente programas que seriam difíceis ou impossíveis de implementar. Eles fazem o mesmo para a programação que os kits de móveis prontos para a construção de casas - é muito mais fácil pegar os painéis prontos e parafusá-los para formar uma estante de livros do que para elaborar o design, sair e encontrar a madeira, cortar todos os painéis no tamanho e formato certos, encontrar os parafusos de tamanho correto e depois montá-los para formar uma estante de livros."
+      },
+      {
+        "subtitulo": "O que JavaScript está fazendo na sua página web?",
+        "paragrafo": "Aqui nós vamos realmente começar a ver algum código, e enquanto fazemos isso vamos explorar o que realmente acontece quando você roda algum código JavaScript na sua página. Vamos recaptular brevemente a história do que acontece quando você carrega uma página web em um navegador (falamos sobre isso no nosso artigo Como o CSS funciona). Quando você carrega uma página web no seu navegador, você está executando seu código (o HTML, CSS e JavaScript) dentro de um ambiente de execução (a guia do navegador). Isso é como uma fábrica que pega a matéria prima (o código) e transforma em um produto (a página web)."
+      },
+      {
+        "subtitulo": "Como você adiciona JavaScript na sua página?",
+        "paragrafo": "O JavaScript é inserido na sua página de uma maneira similar ao CSS. Enquanto o CSS usa o elemento <link> para aplicar folhas de estilo externas e o elemento <style> para aplicar folhas de estilo internas, o JavaScript só precisa de um amigo no mundo do HTML — o elemento <script>."
+      },
+      {
+        "subtitulo": "Comentários",
+        "paragrafo": "Assim como HTML e CSS, é possível escrever comentários dentro do seu código JavaScript que serão ignorados pelo navegador, e existirão simplesmente para prover instruções aos seus colegas desenvolvedores sobre como o código funciona (e pra você, se você tiver que voltar ao seu código depois de 6 meses e não se lembrar do que fez). Comentários são muito úteis, e você deveria usá-los frequentemente, principalmente quando seus códigos forem muito grandes. "
+      }
+    ]
+  },
+  {
+    "linguagem": "JavaScript",
+    "id": "Um-primeiro-mergulho-no-JavaScript",
+    "referencia": "Documentação MDN Javascript",
+    "curso": "Javascript Documentação",
+    "capitulo": "2",
+    "titulo": "Um primeiro mergulho no JavaScript",
+    "paragrafo": "Sejam bem-vindos ao curso de JavaScript para iniciantes do MDN! Neste primeiro artigo vamos fazer uma análise profunda da linguagem, respondendo questões como 'O que é JavaScript?', e 'O que ele faz?', para você se sentir confortável com a proposta da linguagem.",
+    "body": [
+      {
+        "subtitulo": "Pensando como um Programador",
+        "paragrafo": "Uma das coisas mais difíceis de aprender na programação não é a sintaxe que você precisa aprender, mas como aplicá-la para resolver problemas do mundo real. Você precisa começar a pensar como um programador - isso geralmente envolve olhar para as descrições do que seu programa precisa fazer e analisar como eles podem ser aplicados na solução real (prática), quais recursos de código são necessários para alcançar esse objetivo, e como fazê-los trabalhar em conjunto. Isso requer um mistura de trabalho duro, experiência com a sintaxe de programação utilizada e prática, além de um pouco de criatividade, é claro. Quanto mais você programa, melhor programador se torna. Nós não prometemos transformar seu cérebro em um 'cérebro de programador' em 5 minutos, mas vamos te dar todas as oportunidades para pensar na prática como um programador ao longo deste curso. Com isso em mente, vejamos o exemplo que estaremos construindo neste artigo e analisaremos o processo geral de dissecá-lo em tarefas tangíveis."
+      },
+      {
+        "subtitulo": "Então o que ele pode realmente fazer?",
+        "paragrafo": "O que é ainda mais empolgante é a funcionalidade construída no topo do núcleo da linguagem JavaScript. As APIs (Application Programming Interfaces - Interface de Programação de Aplicativos) proveem a você superpoderes extras para usar no seu código JavaScript. APIs são conjuntos prontos de blocos de construção de código que permitem que um desenvolvedor implemente programas que seriam difíceis ou impossíveis de implementar. Eles fazem o mesmo para a programação que os kits de móveis prontos para a construção de casas - é muito mais fácil pegar os painéis prontos e parafusá-los para formar uma estante de livros do que para elaborar o design, sair e encontrar a madeira, cortar todos os painéis no tamanho e formato certos, encontrar os parafusos de tamanho correto e depois montá-los para formar uma estante de livros."
+      }
+    ]
+  },
+  {
+    "linguagem": "JavaScript",
+    "id": "Armazenando-as-informações-que-você-precisa—Variáveis",
+    "referencia": "Documentação MDN Javascript",
+    "curso": "Javascript Documentação",
+    "capitulo": "3",
+    "titulo": "Armazenando as informações que você precisa — Variáveis",
+    "paragrafo": "Depois de ler os últimos artigos, você deve saber agora o que é o JavaScript, o que ele pode fazer para você, como você usa isso junto com outras tecnologias da web e as características principais de alto nível. Neste artigo, iremos ao básico, vendo como trabalhar com a maioria dos blocos de construção básicos de JavaScript - Variáveis.",
+    "body": [
+      {
+        "subtitulo": "O que é uma variável?",
+        "paragrafo": "Uma variável é um container para um valor, como um número que podemos usar em uma operação de adição, ou uma sequência de texto que possamos usar como parte de uma oração. Mas uma coisa especial a respeito das variáveis é que seu conteúdo pode mudar."
+      },
+      {
+        "subtitulo": "Declarando uma variável",
+        "paragrafo": "Para usar uma variável primeiro tem que criá-la — mais precisamente, chamamos isso de declarar a variável. Para fazê-lo digitamos a palavra chave var seguido do nome que desejamos dar à variável."
+      },
+      {
+        "subtitulo": "Inicializando uma variável",
+        "paragrafo": "Uma vez que você declarou uma variável, você pode inicializá-la com um valor. Você faz isso digitando o nome da variável, seguido do sinal de igual (=) e o valor que deseja atribuir a ela. "
+      },
+      {
+        "subtitulo": "A diferença entre var e let",
+        "paragrafo": "Agora você pode estar pensando 'por que precisamos de duas palavras-chave para definir variáveis? Por que var e let?'. As razões são um tanto históricas. Quando o JavaScript foi criado, havia apenas var. Isso funciona basicamente bem na maioria dos casos, mas tem alguns problemas na maneira como funciona — seu design pode ser confuso ou totalmente irritante. Portanto, let foi criada nas versões modernas de JavaScript, uma nova palavra-chave para criar variáveis que funcionam de maneira um pouco diferente para var, corrigindo seus problemas no processo. Algumas diferenças simples são explicadas abaixo. Não abordaremos todas as diferenças agora, mas você começará a descobri-las à medida que aprender mais sobre JavaScript (se realmente quiser ler sobre elas agora, fique à vontade para conferir nossa página de referência let). Para começar, se você escrever um programa JavaScript de várias linhas que declare e inicialize uma variável, poderá realmente declarar uma variável com var depois de inicializá-la e ainda funcionará."
+      },
+      {
+        "subtitulo": "Atualizando uma variável",
+        "paragrafo": "Uma vez que uma tenha um valor atribuido, você pode atualizar esse valor simplesmente dando a ela um valor diferente."
+      },
+      {
+        "subtitulo": "Constants em JavaScript",
+        "paragrafo": "Muitas linguagens de programação têm o conceito de constant — um valor que uma vez declarado não pode ser alterado. Há muitas razões pelas quais você deseja fazer isso, desde segurança (se um script de terceiros alterou esses valores, poderia causar problemas) até a depuração e a compreensão do código (é mais difícil alterar acidentalmente valores que não devem ser alterados e bagunçar as coisas). Nos primeiros dias do JavaScript, não existiam constants. No JavaScript moderno, temos a palavra-chave const, que nos permite armazenar valores que nunca podem ser alterados"
+      }
+    ]
+  },
+  {
+    "linguagem": "JavaScript",
+    "id": "Matemática-básica-no-JavaScript—números-e-operadores",
+    "referencia": "Documentação MDN Javascript",
+    "curso": "Javascript Documentação",
+    "capitulo": "4",
+    "titulo": "Matemática básica no JavaScript — números e operadores",
+    "paragrafo": "Neste ponto do curso estaremos discutindo matemática em JavaScript — Como podemos usar operadores e outros recursos para manipular números e fazer cálculos.",
+    "body": [
+      {
+        "subtitulo": "Todo mundo ama matemática",
+        "paragrafo": "Ok, talvez não. Alguns de nós gostam de matemática, alguns de nós tem a odiado desde que tivemos que aprender a tabuada de multiplicação e divisão na escola, e alguns de nós estão em algum lugar no meio dos dois cenários. Mas nenhum de nós pode negar que a matemática é uma parte fundamental da vida sem a qual não poderíamos ir muito longe. Isso é especialmente verdadeiro quando estamos aprendendo a programar em JavaScript (ou em qualquer outra linguagem, diga-se de passagem) — muito do que fazemos se baseia no processamento de dados numéricos, cálculo de novos valores, etc. Assim você não ficará surpreso em aprender que o JavaScript tem uma configuração completa de funções matemáticas disponíveis."
+      },
+      {
+        "subtitulo": "Operadores de incremento e decremento",
+        "paragrafo": "Às vezes você desejará adicionar ou subtrair, repetidamente, um valor de uma variável numérica. Convenientemente isto pode ser feito usando os operadores incremento ++ e decremento --. Usamos ++ em nosso jogo 'Adivinhe o número' no primeiro artigo Um primeiro mergulho no JavaScript, quando adicionamos 1 ao nosso contagemPalpites para saber quantas adivinhações o usuário deixou após cada turno."
+      },
+      {
+        "subtitulo": "Operadores de atribuição",
+        "paragrafo": "Operadores de atribuição são os que atribuem um valor à uma variável. Nós já usamos o básico, =, muitas vezes, simplesmente atribuindo à variável do lado esquerdo o valor indicado do lado direito do operado. "
+      },
+      {
+        "subtitulo": "Operadores de comparação",
+        "paragrafo": "Às vezes, queremos executar testes verdadeiro / falso e, em seguida, agir de acordo, dependendo do resultado desse teste, para fazer isso, usamos operadores de comparação."
+      }
+    ]
+  },
+  {
+    "linguagem": "JavaScript",
+    "id": "Trabalhando-com-texto—strings-em-JavaScript",
+    "referencia": "Documentação MDN Javascript",
+    "curso": "Javascript Documentação",
+    "capitulo": "5",
+    "titulo": "Trabalhando com texto — strings em JavaScript",
+    "paragrafo": "Agora vamos dar atenção às strings - isto é como é chamado em programação qualquer parte de texto. Neste artigo nós veremos tudo que você realmente deve saber sobre strings quando está aprendendo JavaScript. Como criar, fazer citações e como juntar strings.",
+    "body": [
+      {
+        "subtitulo": "Strings — O básico",
+        "paragrafo": "Em um primeiro relance, strings são tratadas de forma parecida como números, mas quando vamos mais a fundo, você começa a ver algumas diferenças importantes. Vamos começar a entrar em linhas básicas no console para nos familiarizar. Nós vamos fornecer abaixo (você pode também abrir isto no console em uma guia ou janela separada, ou usar o console do navegador se você preferir)."
+      },
+      {
+        "subtitulo": "Concatenando strings",
+        "paragrafo": "Concatenar é uma palavra chique da programação que significa 'colocar junto'. Para colocar strings juntas em JavaScript, usamos o operador (+), o mesmo usamos para adicionar números, mas neste contexto é algo diferente. Vamos tentar este exemplo no console. "
+      }
+    ]
+  },
+  {
+    "linguagem": "CSS",
+    "id": "Primeiros-passos-com-CSS",
+    "referencia": "Documentação MDN CSS",
+    "curso": "CSS Documentação",
+    "capitulo": "1",
+    "titulo": "Primeiros passos com CSS",
+    "paragrafo": "CSS ( Planilhas de estilo em cascata) é usada para estilizar e arranjar páginas web — por exemplo, para alterar a fonte, cor, tamanho e espaçamento do seu conteúdo, separá-lo em multiplas colunas, ou então adicionar animações e outras implementações decorativas. Esse módulo provê um começo sutil em seu caminho pelo domínio do CSS com o básico de como ele funciona, como é a aparência da sintaxe e como você pode começar a utilizá-lo para estilizar seu HTML.",
+    "body": [
+      {
+        "subtitulo": "O que é CSS?",
+        "paragrafo": "CSS (Folhas de Estilo em Cascata) permite a você criar páginas web agradáveis, mas como isso funciona por baixo dos panos? Este artigo explica o que é CSS, com um exemplo de sintaxe simples, e, também, trata alguns conceitos-chaves sobre a linguagem."
+      },
+      {
+        "subtitulo": "Para que serve o CSS?",
+        "paragrafo": "Como falamos antes, CSS é uma linguagem para especificar como documentos são apresentados aos usuários — como eles são estilizados, dispostos etc. Um documento é normalmente um arquivo texto estruturado usando uma linguagem de marcação — HTML é a linguagem de marcação mais comum, mas você também pode encontrar outras, como SVG ou XML. Apresentar um documento para um usuário significa convertê-lo para um formato utilizável pelo seu público. Browsers, como Firefox, Chrome (en-US), ou Edge (en-US) , são projetados para apresentar documentos visualmente, por exemplo, um uma tela de computador, projetor ou impressora."
+      },
+      {
+        "subtitulo": "Sintaxe CSS",
+        "paragrafo": "CSS é uma linguagem baseada em regras. — Você define regras especificando grupos de estilo que devem ser aplicados para elementos particulares ou grupos de elementos na sua página web. Por exemplo, 'Quero que o título principal, na minha página, seja mostrado como um texto grande e de cor vermelha.'."
+      },
+      {
+        "subtitulo": "Módulos CSS",
+        "paragrafo": "Como existem tantas coisas que você pode estilizar com CSS, a linguagem é dividida em módulos. Verá referência a esses módulos a medida que explora o MDN e muita das páginas da documentação são organizadas em torno de um módulo em particular. Por exemplo, poderia dar uma olhada na referência MDN para os módulos Backgrounds and Borders para descobrir qual é o seu objetivo, e quais diferentes propriedades e outras características ele contém. Você também encontrará links para a especificação CSS que define a tecnologia (veja abaixo). Nesse ponto você não precisa se preocupar muito sobre como o CSS é estruturado. No entanto, isso pode tornar fácil achar informação se, por exemplo, você estiver ciente de que uma determinada propriedade provavelmente será encontrada entre outras coisas semelhantes e estiver, portanto, provavelmente na mesma especificação. Para um exemplo específico, vamos voltar ao módulo Backgrounds e Borders — você pode achar que isso tem um senso lógico para as propriedades background-color e border-color serem definidas neste módulo. E, você está certo!"
+      }
+    ]
+  },
+  {
+    "linguagem": "CSS",
+    "id": "Como-CSS-é-estruturado",
+    "referencia": "Documentação MDN CSS",
+    "curso": "CSS Documentação",
+    "capitulo": "2",
+    "titulo": "Como CSS é estruturado",
+    "paragrafo": "Agora que você tem uma ideia sobre o que é o CSS e seu uso basico, é hora de olhar um pouco mais a fundo das estruturas da linguagem em si. Nós ja conhecemos muitos conceitos discutidos aqui, entretanto, você pode voltar para qualquer um em específico, se achar algum dos proximos conceitos um tanto confuso.",
+    "body": [
+      {
+        "subtitulo": "Aplicando CSS no seu HTML",
+        "paragrafo": "Em Começando com o CSS nós linkamos uma folha de estilos externas em nossa página. Isso é o método mais comum utilizado para juntar CSS em um documento, podendo utilizar tal método em multiplas páginas, permitindo você estillizar todas as páginas como as mesmas folha de estilos. Na maioria dos casos, as diferentes páginas do site vão parecer bem iguais entre si e por isso você pode usar as mesmas regras para o estilo padrão da página."
+      },
+      {
+        "subtitulo": "Seletores",
+        "paragrafo": "Não é possível falar de CSS sem conhecer os seletores, e nós já descobrimos vários tipos diferentes no tutorial Começando com o Css. Um seletor é o modo pelo qual nós apontamos para alguma coisa no nosso documento HTML para aplicar os estilos à ela. Se os seus estilos não forem aplicados, então é provável que o seu seletor não esteja ligado aquilo que você pensa que ele deveria. Cada regra CSS começa com um seletor ou uma lista de seletores para informar ao navegador em qual elemento ou elementos as regras devem ser aplicadas. Todos os exemplos a seguir são válidos como seletores ou listas de seletores."
+      },
+      {
+        "subtitulo": "Propriedades e valores",
+        "paragrafo": "Em seu nível mais básico, CSS consiste em dois blocos de construção: Properties: Identificadores legíveis para humanos que indicam quais características estilísticas (por exemplo, font-size, width, background-color) que você deseja alterar. Valores: Cada propriedade especificada recebe um valor, que indica como você deseja alterar essas características estilísticas (por exemplo, o que deseja mudar a fonte, a largura ou a cor de fundo para). A imagem abaixo destaca uma única propriedade e valor. O nome da propriedade é color e o valor é blue."
+      },
+      {
+        "subtitulo": "@rules",
+        "paragrafo": "Até agora, não encontramos as regras, em inglês @rules (pronuncia-se 'at-rules') do CSS. Estas são regras especiais que dão ao CSS algumas instruções sobre como se comportar. Algumas @rules são simples, com o nome da regra e um valor. Por exemplo, para importar uma folha de estilo adicional na sua folha de estilo CSS principal, você pode usar @import."
+      },
+      {
+        "subtitulo": "Atalhos",
+        "paragrafo": "Algumas propriedades como font (en-US), background, padding, border (en-US) e margin são chamadas de propriedades abreviadas - isso porque elas permitem que você defina vários valores de propriedade em uma única linha, economizando tempo e tornando seu código mais organizado no processo."
+      },
+      {
+        "subtitulo": "Comentários",
+        "paragrafo": "Assim como no HTML, você é incentivado a fazer comentários em seu CSS, para ajudá-lo a entender como seu código funciona quando voltar a ele depois de vários meses, e para ajudar outras pessoas a entenderem o código quando estiverem trabalhando nele. Comentários em CSS começam com /* e terminam com */. No bloco de código abaixo, foram usados comentários para marcar o início de diferentes seções de código distintas. Isso é útil para ajudar na navegação da sua base de código à medida que ela cresce - você pode procurar pelos comentários no seu editor de código."
+      },
+      {
+        "subtitulo": "Espaçamento",
+        "paragrafo": "Espaços em branco significam espaços, tabulações e novas linhas. Da mesma forma que no HTML, o navegador tende a ignorar grande parte do espaçamento dentro do seu CSS; grande parte do espaçamento está presente apenas para ajudar na legibilidade. No exemplo abaixo, temos cada declaração (e início/fim de regra) em sua própria linha - essa é uma maneira recomendada de escrever CSS, já que torna fácil manter e entender."
+      }
+    ]
+  },
+  {
+    "linguagem": "CSS",
+    "id": "Como-funciona-o-CSS",
+    "referencia": "Documentação MDN CSS",
+    "curso": "CSS Documentação",
+    "capitulo": "3",
+    "titulo": "Como funciona o CSS",
+    "paragrafo": "Nós aprendemos o básico de CSS, porque e como escrever simples folhas de estílo. Nesta lição, nós daremos uma olhada em como um navegador transforma um CSS e HTML em uma página da web.",
+    "body": [
+      {
+        "subtitulo": "Como o CSS funciona?",
+        "paragrafo": "Quando um navegador redenriza um documento, ele combina o documento com suas informações de estilo. E o documento é processado em estágios, nos quais estão listados abaixo. É sugerível ter em mente que esta é uma versão simplificada do que ocorre quando um navegador redenriza uma página web, e que diferentes navegadores podem manipular estes processos de diferentes formas. De toda forma, esta listagem é muito aproximada do processo comum feito pela maioria dos navegadores."
+      },
+      {
+        "subtitulo": "Sobre o DOM",
+        "paragrafo": "Um DOM uma estrutura árborea (tree-like). Cada elemento, atributo, ou fragmento de texto na linguagem de marcação (markup language) torna-se um DOM node (nó ou ponto de intersecção) (en-US) na estrutura de árvore. Os nodes (nós) são definidos por meio do relacionamento com outros nodes presentes DOM. Alguns elementos são pais ou superiores a elementos dentro de si (child node, ou em português, nós filhos ou nós secundários), e child nodes possuem elementos irmãos. Compreender o DOM ajuda você organizar, debugar e manter seu CSS porque o DOM é onde seu CSS e o conteúdo do documento são combinados. Quando você começa a trabalhar com as DevTools do browser você estará navegando os elementos do DOM como itens ordenados selecionáveis para assim decidir quais regras de estilização aplicar."
+      },
+      {
+        "subtitulo": "O que acontece se um navegador não entende o CSS encontrado?",
+        "paragrafo": "Em uma lição anterior, eu mencionei que navegadores não implementam todo o novo CSS ao mesmo tempo. Em adição, muitas pessoas não usam a versão mais recente de um navegador. Dado que o CSS é processado o tempo todo, e que portanto está adiantado em relação ao que os browsers podem reconhecer, você pode imaginar o que acontece se um browser encontra um seletor ou uma declaração CSS que ele não reconhece."
+      }
+    ]
+  }
+]
